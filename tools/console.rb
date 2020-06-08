@@ -33,18 +33,41 @@ end
 
 #Lyft
 
-passenger1 = Passenger.new("Kate")
-passenger2 = Passenger.new("Lina")
-passenger3 = Passenger.new("Monica")
+# passenger1 = Passenger.new("Kate")
+# passenger2 = Passenger.new("Lina")
+# passenger3 = Passenger.new("Monica")
 
-driver1 = Driver.new("Paola")
-driver2 = Driver.new("Tim")
-driver3 = Driver.new("Sam")
+# driver1 = Driver.new("Paola")
+# driver2 = Driver.new("Tim")
+# driver3 = Driver.new("Sam")
 
-ride1 = Ride.new(passenger1, driver2, 53.3)
-ride2 = Ride.new(passenger2, driver1, 67.8)
-ride3 = Ride.new(passenger1, driver3, 40.0)
-ride4 = Ride.new(passenger2, driver3, 40.0)
+# ride1 = Ride.new(passenger1, driver2, 53.3)
+# ride2 = Ride.new(passenger2, driver1, 67.8)
+# ride3 = Ride.new(passenger1, driver3, 40.0)
+# ride4 = Ride.new(passenger2, driver3, 40.0)
+
+#IMDB
+
+movie1 = Movie.new("Jaws")
+movie2 = Movie.new("Star Wars")
+
+
+show1 = Show.new("Avatar")
+show2 = Show.new("GOT")
+
+actor1 = Actor.new("Lucy Lawless")
+actor2 = Actor.new("David Tennant")
+actor3 = Actor.new("Sean Bean")
+
+movie1.add_actor(actor1)
+movie1.add_actor(actor2)
+movie2.add_actor(actor3)
+
+movie1.add_character("Sheriff", actor1)
+movie1.add_character("Scientist", actor2)
+movie2.add_character("Police", actor3)
+
+
 
 
 
