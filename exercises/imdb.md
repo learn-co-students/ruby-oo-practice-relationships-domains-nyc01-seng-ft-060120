@@ -33,6 +33,8 @@ relationships.* What method can I call on a movie to find all its actors, etc?
 
 - #on_the_big_screen
   - should return Movies that share the same name as this Show
+  
+  #my comments: both have actor in common, so use that as a bridge?
 
 #### Character
 

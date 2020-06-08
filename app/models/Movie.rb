@@ -1,5 +1,5 @@
 class Movie
-attr_accessor :name, :actor, :character
+attr_accessor :name
 
 @@all = []
 
@@ -12,27 +12,21 @@ def self.all
     @@all
 end
 
-
-def add_actor(actor)
-    if self.actor
-    Actor.new(actor)
-end
-
-def add_character(name, actor=nil)
-    Character.new(name, self.actor, self)
+def actors
+    actor_movie_elements = ActorMovie.all.select do |actor_movie|
+        actor_movie.movie == self 
     end
-
-
-# def self.movie_names
-#     movies_with_info = Character.all.map do |character|
-#         character
-#     end
-# end
+    actor_movie_elements.map do |el|
+        el.actor
+    end
+end
 
 def self.most_actors
-    Character.all.map do |character|
-        character.movie
+    result = ActorMovie.all.max_by do |actor_movie| 
+        actor_movie.movie.actors.length
     end
+    result.movie
 end
+
 
 end

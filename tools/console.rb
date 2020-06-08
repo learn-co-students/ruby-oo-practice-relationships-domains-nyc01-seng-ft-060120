@@ -59,13 +59,27 @@ actor1 = Actor.new("Lucy Lawless")
 actor2 = Actor.new("David Tennant")
 actor3 = Actor.new("Sean Bean")
 
-movie1.add_actor(actor1)
-movie1.add_actor(actor2)
-movie2.add_actor(actor3)
+character1 = Character.new("Sheriff", actor1)
+character2 = Character.new("Scientist", actor3)
+character3 = Character.new("Warrior", actor3)
 
-movie1.add_character("Sheriff", actor1)
-movie1.add_character("Scientist", actor2)
-movie2.add_character("Police", actor3)
+actor_movie1 = ActorMovie.new(actor1, movie1)
+actor_movie2 = ActorMovie.new(actor1, movie2)
+actor_movie3 = ActorMovie.new(actor3, movie2)
+
+actor_show1 = ActorShow.new(actor1, show1)
+actor_show2 = ActorShow.new(actor1, show2)
+
+character_movie1 = CharacterMovie.new(character1, movie1)
+character_movie2 = CharacterMovie.new(character2, movie2)
+character_movie3 = CharacterMovie.new(character2, movie1)
+
+character_show1 = CharacterShow.new(character1, show1)
+character_show2 = CharacterShow.new(character2, show2)
+
+
+
+
 
 
 
