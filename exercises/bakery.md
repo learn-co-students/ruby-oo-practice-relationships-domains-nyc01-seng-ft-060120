@@ -4,7 +4,7 @@
 
 You are building an app for a national bakery chain
 
-- your models are bakeries, desserts, ingredients
+- your mod"els are bakeries, desserts, ingredients
   - a bakery has many desserts
   - a dessert belongs to a bakery
   - a dessert has many ingredients
